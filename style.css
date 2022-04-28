@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    background-color:#f7d3d3;
+    box-sizing: border-box;
+    font-family: 'Gochi Hand', cursive;
+    color: rgb(50, 78, 64);
+}
+
+/* big screens */
+/* left side (picture) */
+.container {
+    position: relative;
+    height: 100vh;
+    min-width: 500px;
+}
+.img {
+    background-image: url("./roze.jpg");
+    background-position: left;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+.logo {
+    position: absolute;
+    bottom: 28%;
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem 0;
+}
+.pic {
+    position: absolute;
+    bottom: 12px;
+    width: 100%;
+    text-align: center;
+  }
+.pic, .pic a, .logo {
+    color: white;
+}
+
+/* right side (form) */
+h1,.form > h2 {
+    margin: 1rem 5rem 1rem 0;
+}
+
+#form h2 {
+    margin: 8px 10px 0;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin: 1.5rem 0;
+    padding: 8px;
+    width: 90%;
+    background-color: rgba(50, 78, 64, 0.8);
+    color: #ffeeee;
+}
+.name, .info, .password {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+    font-size: 1.25rem;
+}
+.first, .last, .mail, .tel, .pass, .confirm {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+input {
+    font-size: 1.15rem;
+    padding: 6px;
+    border-radius: 7px;
+    border: #ffeeee 4px solid;
+}
+
+input:focus, input:hover {
+    border: #f7d3d3 4px solid;
+}
+
+/* error for the passwords */
+#pass, #passconfirm {
+    border: red 3px solid;
+}
+
+/* below the form */
+button {
+    padding: 8px 16px;
+    font-size: 1.1rem;
+    margin-left: 5%;
+    margin-bottom: 16px;
+    color: rgb(50, 78, 64);
+    background-color: #ffeeee;
+    border: #ff7272 8px inset;
+}
+button:hover {
+    transform: scale(1.1);
+    border: #ff7272 8px outset;
+}
+p {
+    padding: 8px 5%;
+    margin: 8px 0;
+    font-size: 1.15rem;
+}
+p a {
+    color: #ff7272;
+    line-height: 24px;
+    text-decoration: none;
+}
+p > a:hover {
+    font-size: 22px;
+    color: #ff5858;
+}
+
+
